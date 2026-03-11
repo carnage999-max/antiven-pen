@@ -141,7 +141,7 @@ export default function Science() {
             {/* Science image */}
             <div className={styles.scienceImage}>
               <Image
-                src="/media/images/close-up-on-antiven-pen-with-rodents-in-background.png"
+                src="/images/close-up-on-antiven-pen-with-rodents-in-background.png"
                 alt="Close-up of Antiven Pen in research context"
                 fill
                 className={styles.scienceImg}

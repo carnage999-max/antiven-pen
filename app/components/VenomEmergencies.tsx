@@ -20,7 +20,7 @@ const venomTypes = [
       'Do NOT cut, suck or tourniquet the bite',
       'Get to a medical facility within 4 hours',
     ],
-    image: '/media/images/close-up-on-antiven-pen-with-rodents-in-background.png',
+    image: '/images/close-up-on-antiven-pen-with-rodents-in-background.png',
     imageAlt: 'Antiven Pen with rodents and snake in background',
   },
   {
@@ -37,7 +37,7 @@ const venomTypes = [
       'Keep patient still and hydrated',
       'Seek emergency care immediately',
     ],
-    image: '/media/images/man-with-snake-bite-using-antiven-pen.png',
+    image: '/images/man-with-snake-bite-using-antiven-pen.png',
     imageAlt: 'Man administering Antiven Pen after a bite',
   },
   {
@@ -54,7 +54,7 @@ const venomTypes = [
       'Place in recovery position if unconscious',
       'Transport to ER urgently',
     ],
-    image: '/media/images/woman-applying-antiven-pen-on-snake-bite.png',
+    image: '/images/woman-applying-antiven-pen-on-snake-bite.png',
     imageAlt: 'Woman applying Antiven Pen for treatment',
   },
   {
@@ -71,7 +71,7 @@ const venomTypes = [
       'Watch for anaphylaxis signs',
       'Call emergency services',
     ],
-    image: '/media/images/close-up-on-sublingual-strips-with-rodents-in-background.png',
+    image: '/images/close-up-on-sublingual-strips-with-rodents-in-background.png',
     imageAlt: 'Antiven sublingual strips for marine venom treatment',
   },
 ];

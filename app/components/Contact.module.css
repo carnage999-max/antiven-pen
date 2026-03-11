@@ -76,6 +76,7 @@
   font-weight: 600;
   color: var(--color-primary);
   transition: color var(--transition-fast);
+  white-space: pre-line;
 }
 
 .infoCard:hover .infoValue {

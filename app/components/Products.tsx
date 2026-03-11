@@ -11,8 +11,8 @@ const products = [
     tagline: 'Instant field-ready antivenom',
     description:
       'The flagship Antiven Pen® delivers a precisely calibrated antivenom dose via auto-injector mechanism. No medical training required — remove cap, press, hold for 10 seconds.',
-    image: '/media/images/single-pen-close-up.png',
-    packImage: '/media/images/branded-pack-of-anti-ven.png',
+    image: '/images/single-pen-close-up.png',
+    packImage: '/images/branded-pack-of-anti-ven.png',
     specs: [
       { label: 'Dose', value: '2 mg precision-calibrated' },
       { label: 'Delivery', value: 'Auto-injector, intramuscular' },
@@ -32,8 +32,8 @@ const products = [
     tagline: 'Oral route for secondary response',
     description:
       'Sublingual strips dissolve under the tongue for rapid mucosal absorption. Ideal for patients who struggle with injections or as a secondary maintenance dose following the pen administration.',
-    image: '/media/images/pack-of-antiven-sublingual-strips.png',
-    packImage: '/media/images/close-up-on-sublingual-strips-with-rodents-in-background.png',
+    image: '/images/pack-of-antiven-sublingual-strips.png',
+    packImage: '/images/close-up-on-sublingual-strips-with-rodents-in-background.png',
     specs: [
       { label: 'Form', value: 'Dissolving film strip' },
       { label: 'Route', value: 'Sublingual (under tongue)' },
@@ -53,8 +53,8 @@ const products = [
     tagline: 'Complete field response bundle',
     description:
       'A comprehensive carry-anywhere kit including two Antiven Pens, a strip pack, alcohol swabs, tourniquet, emergency card and field instructions. Used by military, rangers and outdoor professionals.',
-    image: '/media/images/pen-types-displayed-product-view.png',
-    packImage: '/media/images/anti-ven-pen-packs-in-store-rack.png',
+    image: '/images/pen-types-displayed-product-view.png',
+    packImage: '/images/anti-ven-pen-packs-in-store-rack.png',
     specs: [
       { label: 'Contents', value: '2× Pen + 6× Strips + kit' },
       { label: 'Case', value: 'Hard-shell water-resistant' },
@@ -74,8 +74,8 @@ const products = [
     tagline: 'Clinical-grade multi-dose supply',
     description:
       'Designed for clinics, hospitals and NGOs operating in high-risk regions. Contains 10 pens, 30 strips, clinical monitoring tools and a CMS-linked stock management system.',
-    image: '/media/images/single-pen-close-up.png',
-    packImage: '/media/images/branded-pack-of-anti-ven.png',
+    image: '/images/single-pen-close-up.png',
+    packImage: '/images/branded-pack-of-anti-ven.png',
     specs: [
       { label: 'Contents', value: '10× Pen + 30× Strips' },
       { label: 'Temperature', value: 'Cold chain 2–8°C' },

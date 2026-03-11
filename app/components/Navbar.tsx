@@ -70,7 +70,7 @@ export default function Navbar() {
             aria-label="Antiven Pen — go to top"
           >
             <Image
-              src="/media/images/anti-ven-pen-icon.png"
+              src="/images/anti-ven-pen-icon.png"
               alt="Antiven Pen logo"
               width={36}
               height={36}

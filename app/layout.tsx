@@ -4,7 +4,7 @@ import './globals.css';
 const siteConfig = {
   name: 'Antiven Pen®',
   url: 'https://antiven.com',
-  ogImage: 'https://antiven.com/media/images/single-pen-close-up.png',
+  ogImage: 'https://antiven.com/images/single-pen-close-up.png',
   description: 'The world\'s first field-ready antivenom auto-injector. Antiven Pen® provides rapid neutralisation for snake bites, spider bites, scorpion stings, and marine venom when seconds matter.',
 };
 
@@ -87,7 +87,7 @@ export default function RootLayout({
               '@type': 'Organization',
               name: 'Antiven Pen®',
               url: siteConfig.url,
-              logo: `${siteConfig.url}/media/images/anti-ven-pen-icon.png`,
+              logo: `${siteConfig.url}/images/anti-ven-pen-icon.png`,
               contactPoint: {
                 '@type': 'ContactPoint',
                 email: 'info@antiven.com',

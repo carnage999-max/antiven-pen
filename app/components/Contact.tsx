@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Mail, FlaskConical, Package, Briefcase, Siren, Send, X, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Siren, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import styles from './Contact.module.css';
 import EmergencyModal from './EmergencyModal';
 
@@ -19,6 +19,8 @@ const CONTACT_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'info@antiven.com
 
 const infoCards = [
   { Icon: Mail, title: 'General Enquiries', value: CONTACT_EMAIL },
+  { Icon: Phone, title: 'Phone', value: '207-947-1999' },
+  { Icon: MapPin, title: 'Mailing Address', value: 'PO Box 52,\nDetroit, ME 04929' },
 ];
 
 interface FormData {

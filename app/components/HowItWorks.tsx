@@ -146,7 +146,7 @@ export default function HowItWorks() {
               {/* Product image in diagram */}
               <div className={styles.diagramProduct}>
                 <Image
-                  src="/media/images/single-pen-close-up.png"
+                  src="/images/single-pen-close-up.png"
                   alt="Antiven Pen close-up"
                   width={200}
                   height={280}
@@ -161,7 +161,7 @@ export default function HowItWorks() {
         <div className={styles.useImages}>
           <div className={styles.useImageCard}>
             <Image
-              src="/media/images/man-with-snake-bite-using-antiven-pen.png"
+              src="/images/man-with-snake-bite-using-antiven-pen.png"
               alt="Man using Antiven Pen after snakebite in the field"
               fill
               className={styles.useCaseImage}
@@ -174,7 +174,7 @@ export default function HowItWorks() {
           </div>
           <div className={styles.useImageCard}>
             <Image
-              src="/media/images/woman-applying-antiven-pen-on-snake-bite.png"
+              src="/images/woman-applying-antiven-pen-on-snake-bite.png"
               alt="Woman applying Antiven Pen on a snakebite"
               fill
               className={styles.useCaseImage}

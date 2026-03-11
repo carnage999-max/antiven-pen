@@ -33,10 +33,10 @@ export default function Hero() {
           muted
           loop
           playsInline
-          poster="/media/images/anti-ven-pen.png"
+          poster="/images/anti-ven-pen.png"
           aria-label="Man's feet walking across a dry rocky desert"
         >
-          <source src="/media/hero/hero.mp4" type="video/mp4" />
+          <source src="/hero/hero.mp4" type="video/mp4" />
         </video>
         <div className={styles.overlay} />
       </div>
@@ -45,7 +45,7 @@ export default function Hero() {
       <div className={styles.content} aria-label="Hero content">
         <div className={styles.productImageWrap}>
           <Image
-            src="/media/images/anti-ven-pen.png"
+            src="/images/anti-ven-pen.png"
             alt="Antiven Pen Auto-Injector — the antidote in your pocket"
             width={320}
             height={420}

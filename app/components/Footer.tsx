@@ -29,6 +29,8 @@ const footerLinks = [
       { label: 'Get In Touch', href: '/#contact' },
       { label: 'Distribution', href: '/#contact' },
       { label: 'info@antiven.com', href: 'mailto:info@antiven.com' },
+      { label: '207-947-1999', href: 'tel:2079471999' },
+      { label: 'PO Box 52, Detroit, ME 04929', href: '/#contact' },
     ],
   },
 ];
@@ -56,7 +58,7 @@ export default function Footer() {
             <div className={styles.brand}>
               <div className={styles.brandLogo}>
                 <Image
-                  src="/media/images/anti-ven-pen-icon.png"
+                  src="/images/anti-ven-pen-icon.png"
                   alt="Antiven Pen"
                   width={44}
                   height={44}
