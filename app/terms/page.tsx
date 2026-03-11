@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service',
+  description: 'Antiven Pen® Terms of Service and Medical Disclaimer.',
+};
 
 export default function TermsPage() {
   return (

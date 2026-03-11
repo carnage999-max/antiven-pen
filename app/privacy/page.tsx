@@ -1,5 +1,11 @@
+import { Metadata } from 'next';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'Antiven Pen® Privacy Policy. Learn how we handle and protect your data.',
+};
 
 export default function PrivacyPage() {
   return (
