@@ -1,0 +1,228 @@
+.section {
+  overflow: hidden;
+  padding-bottom: calc(var(--space-24) + 60px);
+}
+
+.header {
+  text-align: center;
+  max-width: 720px;
+  margin-inline: auto;
+  margin-bottom: var(--space-16);
+}
+
+/* ── Layout ────────────────────────────── */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: start;
+  margin-bottom: var(--space-16);
+}
+
+/* ── Mechanism Cards ───────────────────── */
+.mechanisms {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 24px !important; /* Increased card-to-card spacing */
+}
+
+.mechCard {
+  display: grid !important;
+  grid-template-columns: 56px 1fr !important;
+  gap: 24px !important; /* Fixed icon-to-text spacing */
+  align-items: flex-start !important;
+  padding: 24px; /* Hard fallback */
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.mechCard:hover {
+  transform: translateX(6px);
+  box-shadow: var(--shadow-md);
+}
+
+.mechIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.mechText {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important; /* Space between title and description */
+}
+
+.mechTitle {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.mechDesc {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+/* ── Visual ────────────────────────────── */
+.visual {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-6));
+}
+
+.molecularDiagram {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.diagramSvg {
+  width: 100%;
+  display: block;
+}
+
+/* ── Science Image ─────────────────────── */
+.scienceImage {
+  position: relative;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.scienceImg {
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.scienceOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(8, 20, 45, 0.8) 0%, transparent 60%);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--space-5);
+}
+
+.scienceCaption {
+  color: #fff;
+}
+
+.scienceCaption strong {
+  display: block;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+
+.scienceCaption p {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ── Tech Grid ─────────────────────────── */
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+}
+
+.techCard {
+  background: linear-gradient(135deg, #0d1f3c 0%, #08142a 100%);
+  border-radius: var(--radius-lg);
+  padding: 32px 24px; /* Hard fallback */
+  text-align: center;
+  border: 1px solid rgba(26, 95, 180, 0.2);
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important; /* Internal card spacing */
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+}
+
+.techStat {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+.techLabel {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.techDetail {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ── Shape Divider ─────────────────────── */
+.shapeDivider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.shapeDivider svg {
+  display: block;
+  width: 100%;
+  height: 80px;
+}
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 1024px) {
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    position: relative;
+    top: auto;
+  }
+
+  .shapeDivider {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .mechCard {
+    grid-template-columns: 48px 1fr !important;
+    gap: 16px !important;
+    padding: 16px !important;
+  }
+
+  .mechIcon {
+    width: 44px;
+    height: 44px;
+  }
+}

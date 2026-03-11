@@ -1,0 +1,194 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3000; /* Highest z-index to stay above everything */
+  height: var(--nav-height);
+  transition: all var(--transition-base);
+}
+
+.navbar.scrolled {
+  background: rgba(4, 12, 30, 0.96); /* Almost solid medical dark blue */
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--space-6);
+  height: 100%;
+  gap: var(--space-8);
+}
+
+/* ── Logo ──────────────────────────────── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logoIcon {
+  border-radius: var(--radius-sm);
+  object-fit: contain;
+}
+
+.logoText {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.logoPen {
+  color: var(--color-accent);
+}
+
+/* ── Desktop Links ─────────────────────── */
+.links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex: 1;
+  justify-content: center;
+}
+
+.link {
+  display: block;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.82);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  white-space: nowrap;
+}
+
+.link:hover,
+.link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Emergency CTA ─────────────────────── */
+.emergencyBtn {
+  flex-shrink: 0;
+  font-size: var(--font-size-sm) !important;
+  padding: 0.65rem 1.4rem !important;
+}
+
+/* ── Hamburger ─────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-2);
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform var(--transition-base), opacity var(--transition-fast);
+  transform-origin: center;
+}
+
+.hamburgerOpen span:nth-child(1) {
+  transform: rotate(45deg) translateY(7px);
+}
+
+.hamburgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburgerOpen span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-7px);
+}
+
+/* ── Mobile Overlay ────────────────────── */
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  background: #040c1e; /* Solid background for mobile */
+  z-index: 2000; /* Higher than navbar to cover everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden; /* Prevent interaction when closed */
+  transform: translateY(-10px); /* Subtle lift instead of full slide for performance */
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+.mobileOverlay.mobileOverlayOpen {
+  opacity: 1;
+  pointer-events: all;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mobileLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mobileLink {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.88);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-md);
+  transition: color var(--transition-fast), background var(--transition-fast);
+  letter-spacing: -0.01em;
+}
+
+.mobileLink:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.mobileCta {
+  font-size: var(--font-size-lg) !important;
+  padding: var(--space-4) var(--space-10) !important;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mobileCtaIcon {
+  flex-shrink: 0;
+}
+
+/* ── Responsive ────────────────────────── */
+@media (max-width: 900px) {
+  .links,
+  .emergencyBtn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .logoText {
+    font-size: 1.1rem;
+  }
+}
