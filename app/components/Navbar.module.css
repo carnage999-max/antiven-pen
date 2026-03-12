@@ -3,13 +3,16 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 3000; /* Highest z-index to stay above everything */
+  z-index: 3000;
   height: var(--nav-height);
   transition: all var(--transition-base);
+  background: transparent;
 }
 
+/* Force solid background on sub-pages or when scrolled */
+:global(html:not([data-path="/"])) .navbar,
 .navbar.scrolled {
-  background: rgba(4, 12, 30, 0.96); /* Almost solid medical dark blue */
+  background: rgba(4, 12, 30, 0.96) !important;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);

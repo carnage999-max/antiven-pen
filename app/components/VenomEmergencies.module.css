@@ -227,7 +227,11 @@
   }
 
   .panelImage {
-    height: 300px;
+    display: none !important;
+  }
+
+  .panelContent {
+    width: 100% !important;
   }
 
   .typeSelector {
