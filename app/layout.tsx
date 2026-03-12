@@ -71,6 +71,8 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+import Script from 'next/script';
+
 export default function RootLayout({
   children,
 }: {
@@ -79,11 +81,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `document.documentElement.dataset.path = window.location.pathname;`,
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -119,7 +116,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Script src="https://now-hiring-eta.vercel.app/widget.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }

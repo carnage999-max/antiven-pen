@@ -10,7 +10,6 @@
 }
 
 /* Force solid background on sub-pages or when scrolled */
-:global(html:not([data-path="/"])) .navbar,
 .navbar.scrolled {
   background: rgba(4, 12, 30, 0.96) !important;
   backdrop-filter: blur(24px);

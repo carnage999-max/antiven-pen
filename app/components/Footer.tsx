@@ -50,7 +50,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className={styles.footer} role="contentinfo">
+    <footer className={styles.footer} role="contentinfo" suppressHydrationWarning>
       <div className={styles.top}>
         <div className="container">
           <div className={styles.grid}>

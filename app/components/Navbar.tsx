@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { Siren } from 'lucide-react';
 import styles from './Navbar.module.css';
 
@@ -16,6 +17,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -55,7 +57,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
+      <nav className={`${styles.navbar} ${(scrolled || pathname !== '/') ? styles.scrolled : ''}`} role="navigation" aria-label="Main navigation">
         <div className={styles.container}>
           {/* Logo */}
           <a
