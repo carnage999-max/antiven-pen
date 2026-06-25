@@ -10,6 +10,7 @@ const siteConfig = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+  manifest: "/manifest.webmanifest",
   title: {
     default: 'Antiven Pen® — The Antidote in Your Pocket',
     template: `%s | ${siteConfig.name}`,
@@ -63,6 +64,14 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: '/',
+  },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    shortcut: ["/favicon.ico"],
   },
 };
 
