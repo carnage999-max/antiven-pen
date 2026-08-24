@@ -128,6 +128,18 @@ export default function Footer() {
             Antiven Pen® is a medical device. Always consult a healthcare professional.
             This product does not replace emergency medical treatment. Always seek care after any venomous bite.
           </p>
+          <p className={styles.copyright}>
+            Part of the{" "}
+            <a
+              href="https://se7eninc.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.legalLink}
+            >
+              Se7en
+            </a>{" "}
+            family of companies.
+          </p>
         </div>
       </div>
     </footer>
