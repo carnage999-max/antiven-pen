@@ -127,7 +127,11 @@ export default function RootLayout({
       </head>
       <body>
         {children}
-        <Script src="https://now-hiring-eta.vercel.app/widget.js" strategy="afterInteractive" />
+        <Script
+          src="https://now-hiring-eta.vercel.app/widget.js"
+          data-icon="Syringe"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
